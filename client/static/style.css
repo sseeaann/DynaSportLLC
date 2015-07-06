@@ -1,0 +1,67 @@
+section#header{
+	min-height: 100vh;
+	background: url(../images/bmw_st_johns.png) no-repeat center;
+	background-size: cover;
+}
+
+section#two{
+	min-height: 100vh;
+	margin-top: 100px;
+}
+section#quotes{
+	height: 40vh;
+	background-color: #ddd;
+	padding: 50px 0;
+}
+section#four{
+	/*min-height: 100vh;*/
+}
+section#contactForm{
+	/*min-height: 100vh;*/
+}
+section#footer{
+	min-height: 100px;
+	background-color: black;
+}
+	.sectionLeft {
+		height: 100vh;
+		padding: 0;
+	}
+	.sectionRight {
+		height: 100vh;
+		background: url(../images/miniCooper.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	div#firstDiv {
+		background-color: white;
+		height: 50%;
+		/*display: block;*/
+	}
+	div#secondDiv {
+		/*display: block;*/
+	}
+div.content {
+	padding: 50px;
+}
+h2 { margin: 0;}
+
+#instafeed img {
+  display:inline-block;
+  position:relative;
+  width: 25%;
+}
+
+#googleMap {
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#quote-carousel {
+	text-align: center;
+	color: #272b30;
+}
+
+blockquote {
+	border-left: none;
+}
