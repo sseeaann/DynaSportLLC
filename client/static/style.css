@@ -1,5 +1,5 @@
 section#header{
-	min-height: 90vh;
+	min-height: 100vh;
 	background: url(../images/bmw_st_johns.png) no-repeat center;
 	background-size: cover;
 }
@@ -7,16 +7,40 @@ section#header{
 section#two{
 	min-height: 100vh;
 }
+	div#twoContent {
+		display: none;
+	}
 section#quotes{
 	height: 40vh;
-	background-color: #ddd;
-	padding: 50px 0;
 }
+	div#quotesContent {
+		display: none;
+		background-color: #ddd;
+		height: 100%;
+		padding: 50px 0;
+	}
 @media screen and (max-width: 767px){
 	section#quotes{
 		height: 50vh;
 	}
 }
+section#instafeed {
+	display: none;
+}
+section#links {
+	min-height: 30vh;
+}
+	div#linksContent {
+		display: none;
+	}
+section#contactForm {
+	background: url(../images/carbon-fiber.jpg) no-repeat;
+	background-size: cover;
+	min-height: 50vh;
+}
+	div#contactContent {
+		display: none;
+	}
 section#footer{
 	min-height: 100px;
 	background-color: black;
@@ -27,7 +51,7 @@ div.footer {
 }
 
 	.sectionLeft {
-		height: 100vh;
+		min-height: 100vh;
 		padding: 0;
 	}
 	.sectionRight {
@@ -38,17 +62,44 @@ div.footer {
 
 	div#firstDiv {
 		background-color: white;
-		height: 50%;
-		/*display: block;*/
+		min-height: 50%;
 	}
 	div#secondDiv {
-		/*display: block;*/
+		/*min-height: 50%;*/
 	}
 div.content {
 	padding: 50px;
 }
 
-h2 { margin: 0;}
+h1, h2 { margin: 0;}
+
+h1.dynasport {
+	text-align: center;
+	position: relative;
+	top: 30vh;
+	left: 30vw;
+	font-size: 8em;
+	-webkit-text-stroke: 1px black;
+	text-shadow:
+       2px 2px 0 #222,
+     -1px -1px 0 #222,  
+      1px -1px 0 #222,
+      -1px 1px 0 #222,
+       5px 5px 0 #222;
+	font-family: 'Racing Sans One', cursive;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+	#dyna {
+		/*color: #ff3c00;*/
+		color: #dbbc8c;
+	}
+	#sport {
+		/*color: #bf0000;*/
+		color: #ab8c5e;
+		-webkit-animation-delay: 0.3s;
+	}
 
 
 #instafeed img {
@@ -80,6 +131,10 @@ blockquote {
 		margin: 30px 0 0 0;
 	}
 
+	.linkBottom_img {
+		padding-top: 1em;
+	}
+
 .bottomLinks {
 	background-color: #222;
 	padding: 10px;
@@ -98,4 +153,11 @@ blockquote {
 	top: 0;
 	z-index: 999;
 	width: 100%;
+}
+h1#phone {
+	font-weight: bold;
+	color: #ab8c5e;
+	line-height: 2em;
+	text-align: center;
+	font-size: 3.5em;
 }

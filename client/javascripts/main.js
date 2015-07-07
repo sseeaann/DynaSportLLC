@@ -10,6 +10,25 @@ $(document).ready(function(){
 		($(window).scrollTop() > navHeight) ? $('.nav').addClass('goToTop') : $('.nav').removeClass('goToTop');
 	});
 
+	$(window).scroll(function(){
+		var x = $(this).scrollTop();
+		if (x > 300) {
+			$('#twoContent').show();
+		}
+		if (x > 900) {
+			$('#quotesContent').slideDown('slow');
+		}
+		if (x > 1200) {
+			$('#instafeed').show();
+		}
+		if (x > 1600) {
+			$('#linksContent').fadeIn('slow');
+		}
+		if (x > 2000) {
+			$('#contactContent').show(300);
+		}
+	});
+
 	var userFeed = new Instafeed({
 		get: 'user',
 		userId: 1765479990,

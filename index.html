@@ -15,19 +15,23 @@
 	<link rel="stylesheet" href="client/static/animate.css">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="client/static/style.css">
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <!-- 	ᕙ(⇀‸↼‶)ᕗ	-->
-	<section id="header"></section>
+	<section id="header">
+		<h1 class="dynasport animated zoomInLeft" id="dyna">Dyna</h1><h1 class="dynasport animated zoomInRight" id="sport">Sport</h1>
+	</section>
 
-	<div class="nav">
+	<!-- <div class="nav">
 		<div class="container">
 			<img src="client/images/dynalogo2.png" alt="dynasport logo">
 		</div>
-	</div>
+	</div> -->
 
 	<section id="two">
-		<div class="row">
+		<div id="twoContent">
 			<div class="sectionRight animated bounceInRight col-md-6 col-md-push-6"></div>
 			<div class="sectionLeft animated bounceInLeft col-md-6 col-md-pull-6">
 				<div id="firstDiv" class="col-xs-12">
@@ -53,50 +57,52 @@
 		<!-- <div class="sectionRight animated bounceInRight col-md-6 col-md-offset-6"></div> -->
 	</section>
 	<section id="quotes">
-		<div class="row">
-			<div class='col-md-offset-2 col-md-8 text-center'>
-				<h2 class="text-primary">Hear from some of our happy customers</h2>
+		<div id="quotesContent">
+			<div class="row">
+				<div class='col-md-offset-2 col-md-8 text-center'>
+					<h2 class="text-primary">Hear from some of our happy customers</h2>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-offset-1 col-md-10">
-				<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="carousel slide" data-ride="carousel" id="quote-carousel">
 
-					<!-- Carousel Slides / Quotes -->
-					<div class="carousel-inner">
+						<!-- Carousel Slides / Quotes -->
+						<div class="carousel-inner">
 
-						<!-- Quote 1 -->
-						<div class="item active">
-							<blockquote>
-								<div class="row">
-									<div class="quote">
-										<p>"The guys at Dynasport are simply the best, no questions asked! No charge to diagnose warning lights and they don't push things on you that you don't need. They tell you honestly and simply what you will need to service down the road but they don't try to trick you into thinking your car will spontaneously combust if you don't do $3000 in unnecessary repairs."</p>
-										<footer>Brian O.</footer>
+							<!-- Quote 1 -->
+							<div class="item active">
+								<blockquote>
+									<div class="row">
+										<div class="quote">
+											<p>"The guys at Dynasport are simply the best, no questions asked! No charge to diagnose warning lights and they don't push things on you that you don't need. They tell you honestly and simply what you will need to service down the road but they don't try to trick you into thinking your car will spontaneously combust if you don't do $3000 in unnecessary repairs."</p>
+											<footer>Brian O.</footer>
+										</div>
 									</div>
-								</div>
-							</blockquote>
-						</div>
-						<!-- Quote 2 -->
-						<div class="item">
-							<blockquote>
-								<div class="row">
-									<div>
-										<p>Hands down the best service shop I have experienced. The employees are friendly and very smart when it comes to our German cars. Their prices are very reasonable. If you need any sort of work done on your bimmer or mini, this should be your go-to.</p>
-										<footer>Chase R.</footer>
+								</blockquote>
+							</div>
+							<!-- Quote 2 -->
+							<div class="item">
+								<blockquote>
+									<div class="row">
+										<div>
+											<p>Hands down the best service shop I have experienced. The employees are friendly and very smart when it comes to our German cars. Their prices are very reasonable. If you need any sort of work done on your bimmer or mini, this should be your go-to.</p>
+											<footer>Chase R.</footer>
+										</div>
 									</div>
-								</div>
-							</blockquote>
-						</div>
-						<!-- Quote 3 -->
-						<div class="item">
-							<blockquote>
-								<div class="row">
-									<div>
-										<p>Overall my experience with DynaSport has been hassle free. The staff members are MINI enthusiasts and are knowledgeable about the intricacies specific to each model and year of manufacture. Comparing my many interactions with other Portland area mechanics who claim to be MINI specialists, these guys are far more straight forward and fair dealing. The quality of the work I have had done by DynaSport supports the high recommendations it has earned from other reviewers.</p>
-										<footer>F. Grey</footer>
+								</blockquote>
+							</div>
+							<!-- Quote 3 -->
+							<div class="item">
+								<blockquote>
+									<div class="row">
+										<div>
+											<p>Overall my experience with DynaSport has been hassle free. The staff members are MINI enthusiasts and are knowledgeable about the intricacies specific to each model and year of manufacture. Comparing my many interactions with other Portland area mechanics who claim to be MINI specialists, these guys are far more straight forward and fair dealing. The quality of the work I have had done by DynaSport supports the high recommendations it has earned from other reviewers.</p>
+											<footer>F. Grey</footer>
+										</div>
 									</div>
-								</div>
-							</blockquote>
+								</blockquote>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -115,32 +121,34 @@
 	</section>
 
 	<section id="links">
-		<div class="topLinks">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 col-sm-offset-1">
-						<a href="http://www.bridgecitymotors.com" target="_blank"><img src="client/images/BCMLogo.png" alt="Bridge City Motors" class="linkTop_img img-responsive"></a>
-					</div>
-					<div class="col-sm-4 col-sm-offset-1">
-						<a href="http://gallagherautospa.com/" target="_blank"><img src="client/images/gallagher.png" alt="Gallagher Auto Spa" class="linkTop_img img-responsive"></a>
+		<div id="linksContent">
+			<div class="topLinks">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-sm-4 col-sm-offset-1">
+							<a href="http://www.bridgecitymotors.com" target="_blank"><img src="client/images/BCMLogo.png" alt="Bridge City Motors" class="linkTop_img img-responsive"></a>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-sm-offset-1">
+							<a href="http://gallagherautospa.com/" target="_blank"><img src="client/images/gallagher.png" alt="Gallagher Auto Spa" class="linkTop_img img-responsive"></a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bottomLinks">
-			<div class="container">
-				<div class="row linkRow2">
-					<div class="col-sm-3">
-						<a href="http://www.hrsprings.com" target="_blank"><img src="client/images/hrsprings.png" alt="H and R springs" class="linkBottom_img img-responsive"></a>
-					</div>
-					<div class="col-sm-3">
-						<a href="http://www.pro3-racing.com" target="_blank"><img src="client/images/pro3.jpeg" alt="pro3 racing" class="linkBottom_img img-responsive"></a>
-					</div>
-					<div class="col-sm-3">
-						<a href="http://powerflexusa.com/" target="_blank"><img src="client/images/PF_USA_Logo.png" alt="Powerflex USA" class="linkBottom_img img-responsive"></a>
-					</div>
-					<div class="col-sm-3">
-						<a href="http://portlandhomesforcars.com" target="_blank"><img src="client/images/portlandhomesforcars.png" alt="Portland Homes for Cars" class="linkBottom_img img-responsive"></a>
+			<div class="bottomLinks">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-sm-3">
+							<a href="http://powerflexusa.com/" target="_blank"><img src="client/images/PF_USA_Logo.png" alt="Powerflex USA" class="linkBottom_img img-responsive"></a>
+						</div>
+						<div class="col-xs-6 col-sm-3">
+							<a href="http://www.hrsprings.com" target="_blank"><img src="client/images/hrsprings.png" alt="H and R springs" class="linkBottom_img img-responsive"></a>
+						</div>
+						<div class="col-xs-6 col-sm-3">
+							<a href="http://portlandhomesforcars.com" target="_blank"><img src="client/images/portlandhomesforcars.png" alt="Portland Homes for Cars" class="linkBottom_img img-responsive"></a>
+						</div>
+						<div class="col-xs-6 col-sm-3">
+							<a href="http://www.pro3-racing.com" target="_blank"><img src="client/images/pro3.jpg" alt="pro3 racing" class="linkBottom_img img-responsive"></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -148,11 +156,13 @@
 	</section>
 
 	<section id="contactForm">
-		<div class="container">
+		<div class="container" id="contactContent">
 			<h3>Please feel free to contact us any way you like. We are happy to answer any questions you may have. We are more than a service facility, we are a resource for any and all MINI Cooper owners.</h3>
 			<div class="row">
 				<div class="col-sm-6">
-					<p>Send us a message and an associate will be in touch with you soon.</p>
+					<h1 id="phone">Call: 503-241-1717</h1>
+					<br>
+					<p>Or send us a message and an associate will be in touch with you soon.</p>
 					<hr>
 					<form class="form-horizontal" action="mailto:seanhaines13@gmail.com" method="post" enctype="text/plain" name="EmailTestForm">
 						<div class="form-group">
