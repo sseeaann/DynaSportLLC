@@ -17,12 +17,20 @@
 	<link rel="stylesheet" href="static/style.css">
 </head>
 <body>
+<!-- 	ᕙ(⇀‸↼‶)ᕗ	-->
 	<section id="header"></section>
+
+	<div class="nav">
+		<div class="container">
+			<img src="images/dynalogo2.png" alt="dynasport logo">
+		</div>
+	</div>
+
 	<section id="two">
 		<div class="row">
 			<div class="sectionRight animated bounceInRight col-md-6 col-md-push-6"></div>
 			<div class="sectionLeft animated bounceInLeft col-md-6 col-md-pull-6">
-				<div id="firstDiv">
+				<div id="firstDiv" class="col-xs-12">
 					<div class="content">
 						<h2>About Us</h2>
 						<br>
@@ -31,7 +39,7 @@
 						<p>DynaSport offers full service, repairs, stock and performance parts, and performance modifications for all 2002 and newer MINI Coopers and all ranges of BMW’s. From simple oil changes to track preparations, every BMW and MINI receives our professional attention.</p>
 					</div>
 				</div>
-				<div id="secondDiv">
+				<div id="secondDiv" class="col-xs-12">
 					<div class="content">
 						<h2>Lorem ipsum dolor</h2>
 						<br>
@@ -50,8 +58,8 @@
 				<h2 class="text-primary">Hear from some of our happy customers</h2>
 			</div>
 		</div>
-		<div class='row'>
-			<div class='col-md-offset-2 col-md-8'>
+		<div class="row">
+			<div class="col-md-offset-1 col-md-10">
 				<div class="carousel slide" data-ride="carousel" id="quote-carousel">
 
 					<!-- Carousel Slides / Quotes -->
@@ -61,7 +69,7 @@
 						<div class="item active">
 							<blockquote>
 								<div class="row">
-									<div>
+									<div class="quote">
 										<p>"The guys at Dynasport are simply the best, no questions asked! No charge to diagnose warning lights and they don't push things on you that you don't need. They tell you honestly and simply what you will need to service down the road but they don't try to trick you into thinking your car will spontaneously combust if you don't do $3000 in unnecessary repairs."</p>
 										<footer>Brian O.</footer>
 									</div>
@@ -96,66 +104,104 @@
 		</div>
 	</section>
 
-	<section id="four">
+	<section id="instafeed">
 		<div class="row">
-			<div id="instafeed"></div>
+			<div class="col-xs-12">
+				<div class="row">
+					<div id="instafeed"></div>
+				</div>
+			</div>
 		</div>
 	</section>
+
+	<section id="links">
+		<div class="topLinks">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-1">
+						<a href="http://www.bridgecitymotors.com" target="_blank"><img src="images/BCMLogo.png" alt="Bridge City Motors" class="linkTop_img img-responsive"></a>
+					</div>
+					<div class="col-sm-4 col-sm-offset-1">
+						<a href="http://gallagherautospa.com/" target="_blank"><img src="images/gallagher.png" alt="Gallagher Auto Spa" class="linkTop_img img-responsive"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottomLinks">
+			<div class="container">
+				<div class="row linkRow2">
+					<div class="col-sm-3">
+						<a href="http://www.hrsprings.com" target="_blank"><img src="images/hrsprings.png" alt="H and R springs" class="linkBottom_img img-responsive"></a>
+					</div>
+					<div class="col-sm-3">
+						<a href="http://www.pro3-racing.com" target="_blank"><img src="images/pro3.jpeg" alt="pro3 racing" class="linkBottom_img img-responsive"></a>
+					</div>
+					<div class="col-sm-3">
+						<a href="http://powerflexusa.com/" target="_blank"><img src="images/PF_USA_Logo.png" alt="Powerflex USA" class="linkBottom_img img-responsive"></a>
+					</div>
+					<div class="col-sm-3">
+						<a href="http://portlandhomesforcars.com" target="_blank"><img src="images/portlandhomesforcars.png" alt="Portland Homes for Cars" class="linkBottom_img img-responsive"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="contactForm">
 		<div class="container">
 			<h3>Please feel free to contact us any way you like. We are happy to answer any questions you may have. We are more than a service facility, we are a resource for any and all MINI Cooper owners.</h3>
 			<div class="row">
-			<div class="col-sm-6">
-				<p>Send us a message and an associate will be in touch with you soon.</p>
-				<hr>
-				<form class="form-horizontal" action="mailto:seanhaines13@gmail.com" method="post" enctype="text/plain" name="EmailTestForm">
-					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Name</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" id="nameInput" placeholder="First and Last name">
+				<div class="col-sm-6">
+					<p>Send us a message and an associate will be in touch with you soon.</p>
+					<hr>
+					<form class="form-horizontal" action="mailto:seanhaines13@gmail.com" method="post" enctype="text/plain" name="EmailTestForm">
+						<div class="form-group">
+							<label for="name" class="col-sm-2 control-label">Name</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="nameInput" placeholder="First and Last name">
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="email" class="col-sm-2 control-label">Email</label>
-						<div class="col-sm-10">
-							<input type="email" class="form-control" id="emailInput" placeholder="example@email.com">
+						<div class="form-group">
+							<label for="email" class="col-sm-2 control-label">Email</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="emailInput" placeholder="example@email.com">
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="phone" class="col-sm-2 control-label">Phone</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" id="phone" placeholder="555-555-5555">
+						<div class="form-group">
+							<label for="phone" class="col-sm-2 control-label">Phone</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="phone" placeholder="555-555-5555">
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">Message</label>
-						<div class="col-sm-10">
-							<textarea class="form-control" id="textbox" rows="3" placeholder="Message"></textarea>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" id="textbox" rows="3" placeholder="Message"></textarea>
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-10">
-							<button type="submit" class="btn btn-primary">Send</button>
-							<button type="reset" class="btn btn-danger">Reset</button>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-primary">Send</button>
+								<button type="reset" class="btn btn-danger">Reset</button>
+							</div>
 						</div>
-					</div>
-				</form>
-			</div>
-			<div class="col-sm-6">
-				<img src="images/Google_Maps.png" alt="google map" id="googleMap">
-				<address>
-					1321 NW 17th Ave<br>
-					Portland, Oregon 97209<br>
-					<abbr title="Phone">Phone:</abbr> 503-241-1717<br>
-					<abbr title="Fax">Fax:</abbr> 503-477-8265<br>
-				</address>
-				<a href="https://www.google.com/maps/dir//1321+NW+17th+Ave,+Portland,+OR+97209/" target="_blank" class="btn btn-default">View in Google Maps</a>
-			</div>
+					</form>
+				</div>
+				<div class="col-sm-6">
+					<img src="images/Google_Maps.png" alt="google map" class="img-rounded img-responsive">
+					<address class="col-xs-6">
+						1321 NW 17th Ave<br>
+						Portland, Oregon 97209<br>
+						<abbr title="Phone">Phone:</abbr> 503-241-1717<br>
+						<abbr title="Fax">Fax:</abbr> 503-477-8265<br>
+					</address>
+					<a href="https://www.google.com/maps/dir//1321+NW+17th+Ave,+Portland,+OR+97209/" target="_blank" class="btn btn-default col-xs-6" id="mapBtn">View in Google Maps</a>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section id="footer">
-		<div>
+		<div class="footer">
 			<p class="text-center text-primary">DynaSport LLC | MINI and BMW Service, Repair and Performance | Portland, Oregon</p>
 		</div>
 	</section>

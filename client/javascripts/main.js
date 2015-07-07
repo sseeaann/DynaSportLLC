@@ -2,13 +2,16 @@ $(document).ready(function(){
 
 	$('#quote-carousel').carousel({
 		pauseOnHover: true,
-		interval: 5000
+		interval: 6000
+	});
+
+	$(window).bind('scroll',function(){
+		var navHeight = 700;
+		($(window).scrollTop() > navHeight) ? $('.nav').addClass('goToTop') : $('.nav').removeClass('goToTop');
 	});
 
 	var userFeed = new Instafeed({
 		get: 'user',
-		// get: 'tagged',
-		// tagName: 'BMW',
 		userId: 1765479990,
 		accessToken: '1765479990.467ede5.5373d2910670417394cfeabb0a03fdcf',
 		links: true,
@@ -30,23 +33,4 @@ $(document).ready(function(){
 		template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
 	});
 	userFeed.run();
-
-	// var feed = new Instafeed({
-	// 	get: 'tagged',
-	// 	tagName: 'bmw',
-	// 	userId: 1765479990,
-	// 	accessToken: '1765479990.467ede5.5373d2910670417394cfeabb0a03fdcf',
-	// 	links: true,
-	// 	sortBy: 'random',
-	// 	limit: 4,
-	// 	target: 'instafeed2',
-	// 	resolution: 'standard_resolution',
-	// 	template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
-	// });
-	// feed.run();
-
-	// setInterval(function(){
-	// 	$('#instafeed2').empty();
-	// 	feed.run();
-	// }, 5000);
 });

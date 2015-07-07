@@ -1,35 +1,38 @@
 section#header{
-	min-height: 100vh;
+	min-height: 90vh;
 	background: url(../images/bmw_st_johns.png) no-repeat center;
 	background-size: cover;
 }
 
 section#two{
 	min-height: 100vh;
-	margin-top: 100px;
 }
 section#quotes{
 	height: 40vh;
 	background-color: #ddd;
 	padding: 50px 0;
 }
-section#four{
-	/*min-height: 100vh;*/
-}
-section#contactForm{
-	/*min-height: 100vh;*/
+@media screen and (max-width: 767px){
+	section#quotes{
+		height: 50vh;
+	}
 }
 section#footer{
 	min-height: 100px;
 	background-color: black;
 }
+
+div.footer {
+	padding: 2.5em;
+}
+
 	.sectionLeft {
 		height: 100vh;
 		padding: 0;
 	}
 	.sectionRight {
 		height: 100vh;
-		background: url(../images/miniCooper.jpg) no-repeat center;
+		background: url(../images/dyna_mini.jpg) no-repeat center;
 		background-size: cover;
 	}
 
@@ -44,7 +47,9 @@ section#footer{
 div.content {
 	padding: 50px;
 }
+
 h2 { margin: 0;}
+
 
 #instafeed img {
   display:inline-block;
@@ -52,16 +57,45 @@ h2 { margin: 0;}
   width: 25%;
 }
 
-#googleMap {
-	border: 1px solid black;
-	border-radius: 10px;
-}
-
 #quote-carousel {
 	text-align: center;
 	color: #272b30;
 }
 
+.carousel-inner {
+	margin-top: 5px;
+	border-top: 1px solid black;
+}
+
 blockquote {
 	border-left: none;
+}
+
+.topLinks {
+	background-color: #111;
+}
+
+	.linkTop_img {
+		width: 100%;
+		margin: 30px 0 0 0;
+	}
+
+.bottomLinks {
+	background-color: #222;
+	padding: 10px;
+}
+
+#mapBtn {
+	margin-top: 5px;
+}
+
+.nav {
+	background-color: #1c1e21;
+	height: 70px;
+}
+.goToTop {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
 }
