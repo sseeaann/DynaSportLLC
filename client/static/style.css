@@ -10,6 +10,31 @@ section#two{
 	div#twoContent {
 		display: none;
 	}
+
+		div.sectionRight {
+			height: 100vh;
+			background: url(../images/dyna_mini.jpg) no-repeat center;
+			background-size: cover;
+			padding: 0;
+		}
+		div.sectionLeft {
+			min-height: 100vh; 
+			padding: 0;
+		}
+			div#firstDiv {
+				background-color: white;
+				padding: 5%;
+				margin: 0;
+				min-height: 50vh;
+				color: #222;
+			}
+			div#secondDiv {
+				background-color: #222;
+				padding: 5%;
+				margin: 0;
+				min-height: 50vh;
+			}
+
 section#quotes{
 	height: 40vh;
 }
@@ -24,15 +49,21 @@ section#quotes{
 		height: 50vh;
 	}
 }
-section#instafeed {
-	display: none;
-}
+
+/*section#instafeed {
+	max-width: 100vw;
+}*/
+	div#instafeed {
+		display: none;
+	}
+
 section#links {
 	min-height: 30vh;
 }
 	div#linksContent {
 		display: none;
 	}
+
 section#contactForm {
 	background: url(../images/carbon-fiber.jpg) no-repeat;
 	background-size: cover;
@@ -41,6 +72,7 @@ section#contactForm {
 	div#contactContent {
 		display: none;
 	}
+
 section#footer{
 	min-height: 100px;
 	background-color: black;
@@ -50,25 +82,8 @@ div.footer {
 	padding: 2.5em;
 }
 
-	.sectionLeft {
-		min-height: 100vh;
-		padding: 0;
-	}
-	.sectionRight {
-		height: 100vh;
-		background: url(../images/dyna_mini.jpg) no-repeat center;
-		background-size: cover;
-	}
-
-	div#firstDiv {
-		background-color: white;
-		min-height: 50%;
-	}
-	div#secondDiv {
-		/*min-height: 50%;*/
-	}
 div.content {
-	padding: 50px;
+	/*padding: 50px;*/
 }
 
 h1, h2 { margin: 0;}

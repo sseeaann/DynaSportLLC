@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
 	$('#quote-carousel').carousel({
-		pauseOnHover: true,
-		interval: 6000
+		pause: false,
+		interval: 15000
 	});
 
-	$(window).bind('scroll',function(){
-		var navHeight = 700;
-		($(window).scrollTop() > navHeight) ? $('.nav').addClass('goToTop') : $('.nav').removeClass('goToTop');
-	});
+	// $(window).bind('scroll',function(){
+	// 	var navHeight = 700;
+	// 	($(window).scrollTop() > navHeight) ? $('.nav').addClass('goToTop') : $('.nav').removeClass('goToTop');
+	// });
 
 	$(window).scroll(function(){
 		var x = $(this).scrollTop();
@@ -25,7 +25,7 @@ $(document).ready(function(){
 			$('#linksContent').fadeIn('slow');
 		}
 		if (x > 2000) {
-			$('#contactContent').show(300);
+			$('#contactContent').slideDown(500);
 		}
 	});
 
@@ -46,7 +46,7 @@ $(document).ready(function(){
 				$(image).css('-ms-animation-delay', delay);
 				$(image).css('-o-animation-delay', delay);
 				$(image).css('animation-delay', delay);
-				$(image).addClass('animated bounceInRight');
+				$(image).addClass('animated fadeInUp');
 			});
 		},
 		template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
