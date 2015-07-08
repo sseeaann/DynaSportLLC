@@ -5,6 +5,7 @@ $(document).ready(function(){
 		interval: 15000
 	});
 
+	// For nav bar: 
 	// $(window).bind('scroll',function(){
 	// 	var navHeight = 700;
 	// 	($(window).scrollTop() > navHeight) ? $('.nav').addClass('goToTop') : $('.nav').removeClass('goToTop');
