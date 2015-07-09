@@ -1,9 +1,54 @@
-section#header{
+div#header{
 	min-height: 100vh;
 	background: url(../images/bmw_st_johns.png) no-repeat center;
 	background-size: cover;
+	background-attachment: fixed;
 }
+	div#headerContent {
+		text-align: center;
+		position: relative;
+		top: 30vh;
+	}
+		h1.dynasport {
+			font-size: 8em;
+			-webkit-text-stroke: 1px black;
+			text-shadow:
+		       2px 2px 0 #222,
+		     -1px -1px 0 #222,  
+		      1px -1px 0 #222,
+		      -1px 1px 0 #222,
+		       5px 5px 0 #222;
+			font-family: 'Racing Sans One', arial;
+			display: inline-block;
+			margin: 0 auto;
+		}
 
+			#dyna {
+				color: #dbbc8c;
+			}
+			#sport {
+				color: #ab8c5e;
+				-webkit-animation-delay: 0.3s;
+			}
+
+		#headerContent p {
+			color: #222;
+			margin: 0;
+			letter-spacing: 0.1em;
+			font-size: 2em;
+			font-weight: bold;
+			text-shadow: 0 0 5px #eee;
+			font-family: 'Racing Sans One', arial;
+			-webkit-animation-delay: 1s;
+		}
+
+div.nav {
+	display: none;
+}
+div.mainContent {
+	position: relative;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
 section#two{
 	min-height: 100vh;
 }
@@ -73,49 +118,29 @@ section#contactForm {
 		display: none;
 	}
 
-section#footer{
-	min-height: 100px;
+		div#contactContent h3 {
+			padding: 1.5em 0;
+			text-align: center;
+		}
+
+div.footer{
+	height: 100px;
 	background-color: black;
+	position: relative;
 }
 
-div.footer {
-	padding: 2.5em;
-}
+	div.footer p {
+		text-align: center;
+		position: relative;
+		top: 40px;
+		color: #333
+	}
 
 div.content {
 	/*padding: 50px;*/
 }
 
 h1, h2 { margin: 0;}
-
-h1.dynasport {
-	text-align: center;
-	position: relative;
-	top: 30vh;
-	left: 30vw;
-	font-size: 8em;
-	-webkit-text-stroke: 1px black;
-	text-shadow:
-       2px 2px 0 #222,
-     -1px -1px 0 #222,  
-      1px -1px 0 #222,
-      -1px 1px 0 #222,
-       5px 5px 0 #222;
-	font-family: 'Racing Sans One', cursive;
-	display: inline-block;
-	margin: 0 auto;
-}
-
-	#dyna {
-		/*color: #ff3c00;*/
-		color: #dbbc8c;
-	}
-	#sport {
-		/*color: #bf0000;*/
-		color: #ab8c5e;
-		-webkit-animation-delay: 0.3s;
-	}
-
 
 #instafeed img {
   display:inline-block;

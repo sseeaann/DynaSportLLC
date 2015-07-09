@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$.stellar();
 
 	$('#quote-carousel').carousel({
 		pause: false,
@@ -6,15 +7,21 @@ $(document).ready(function(){
 	});
 
 	// For nav bar: 
-	// $(window).bind('scroll',function(){
-	// 	var navHeight = 700;
-	// 	($(window).scrollTop() > navHeight) ? $('.nav').addClass('goToTop') : $('.nav').removeClass('goToTop');
-	// });
+	$(window).bind('scroll',function(){
+		var navHeight = 700;
+		($(window).scrollTop() > navHeight) ? $('.nav').addClass('goToTop') : $('.nav').removeClass('goToTop');
+	});
 
 	$(window).scroll(function(){
+		// console.log(scrollY);
 		var x = $(this).scrollTop();
 		if (x > 300) {
 			$('#twoContent').show();
+		}
+		if (x > 700) {
+			$('.nav').slideDown('slow');
+		} else {
+			$('.nav').slideUp('slow');
 		}
 		if (x > 900) {
 			$('#quotesContent').slideDown('slow');
