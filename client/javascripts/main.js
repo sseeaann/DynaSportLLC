@@ -21,7 +21,7 @@ $(document).ready(function(){
 		if (x > 700) {
 			$('.nav').slideDown('slow');
 		} else {
-			$('.nav').slideUp('slow');
+			$('.nav').hide('slow');
 		}
 		if (x > 900) {
 			$('#quotesContent').slideDown('slow');
