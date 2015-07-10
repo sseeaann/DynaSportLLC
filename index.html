@@ -18,21 +18,21 @@
 </head>
 <body>
 <!-- 	ᕙ(⇀‸↼‶)ᕗ	-->
-	<div id="header">
+	<header>
 		<div id="headerContent" data-stellar-ratio="0.4">
-			<h1 class="dynasport animated zoomInLeft" id="dyna">Dyna</h1><h1 class="dynasport animated zoomInRight" id="sport">Sport</h1>
+			<h1><span class="dynasport animated zoomInLeft" id="dyna">Dyna</span><span class="dynasport animated zoomInRight" id="sport">Sport</span></h1>
 			<p class="animated fadeIn">More than a service facility</p>
 		</div>
-	</div>
+	</header>
 
-	<div class="nav">
+	<nav>
 		<div class="container">
 			<img src="client/images/dynalogo2.png" alt="dynasport logo">
 			<p>DynaSport</p>
 		</div>
-	</div>
+	</nav>
 	
-	<div class="mainContent">
+	<main role="main">
 		<section id="two">
 			<div id="twoContent">
 				<div class="sectionRight animated fadeInRight col-md-6 col-md-push-6"></div>
@@ -55,7 +55,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="sectionRight animated bounceInRight col-md-6 col-md-offset-6"></div> -->
 		</section>
 		<section id="quotes">
 			<div id="quotesContent">
@@ -77,7 +76,7 @@
 										<div class="row">
 											<div class="quote">
 												<p>"The guys at Dynasport are simply the best, no questions asked! No charge to diagnose warning lights and they don't push things on you that you don't need. They tell you honestly and simply what you will need to service down the road but they don't try to trick you into thinking your car will spontaneously combust if you don't do $3000 in unnecessary repairs."</p>
-												<footer>Brian O.</footer>
+												<p>-Brian O.</p>
 											</div>
 										</div>
 									</blockquote>
@@ -88,7 +87,7 @@
 										<div class="row">
 											<div>
 												<p>Hands down the best service shop I have experienced. The employees are friendly and very smart when it comes to our German cars. Their prices are very reasonable. If you need any sort of work done on your bimmer or mini, this should be your go-to.</p>
-												<footer>Chase R.</footer>
+												<p>-Chase R.</p>
 											</div>
 										</div>
 									</blockquote>
@@ -99,7 +98,7 @@
 										<div class="row">
 											<div>
 												<p>Overall my experience with DynaSport has been hassle free. The staff members are MINI enthusiasts and are knowledgeable about the intricacies specific to each model and year of manufacture. Comparing my many interactions with other Portland area mechanics who claim to be MINI specialists, these guys are far more straight forward and fair dealing. The quality of the work I have had done by DynaSport supports the high recommendations it has earned from other reviewers.</p>
-												<footer>F. Grey</footer>
+												<p>-F. Grey</p>
 											</div>
 										</div>
 									</blockquote>
@@ -113,6 +112,62 @@
 
 		<section id="instafeedContent">
 			<div id="instafeed"></div>
+		</section>
+
+		<section id="contactForm">
+			<div class="container" id="contactContent">
+				<h3>Please feel free to contact us any way you like. We are happy to answer any questions you may have. We are a resource for any and all BMW & MINI owners.</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<p id="phone">Call: 503-241-1717</p>
+						<br>
+						<p>Or send us a message and an associate will be in touch with you soon.</p>
+						<hr>
+						<form class="form-horizontal" action="mailto:seanhaines13@gmail.com" method="post" enctype="text/plain" name="EmailTestForm">
+							<div class="form-group">
+								<label for="name" class="col-sm-1 control-label">Name</label>
+								<div class="col-sm-11">
+									<input type="text" class="form-control" id="nameInput" placeholder="First and Last name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-sm-1 control-label">Email</label>
+								<div class="col-sm-11">
+									<input type="email" class="form-control" id="emailInput" placeholder="example@email.com">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="phone" class="col-sm-1 control-label">Phone</label>
+								<div class="col-sm-11">
+									<input type="text" class="form-control" id="phone" placeholder="555-555-5555">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-1 control-label">Message</label>
+								<div class="col-sm-11">
+									<textarea class="form-control" id="textbox" rows="3" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-1 col-sm-11">
+									<button type="submit" class="btn btn-default">Send</button>
+									<button type="reset" class="btn btn-danger">Reset</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-6">
+						<img src="client/images/Google_Maps.png" alt="google map" class="img-rounded img-responsive" id="mapImg">
+						<div class="col-xs-8">
+							<address>
+								1321 NW 17th Ave<br>
+								Portland, Oregon 97209<br>
+							</address>
+						</div>
+						<a href="http://maps.google.com/?q=1321 NW 17th Ave, Portland, Oregon, 97209" target="_blank" class="btn btn-default btn-sm col-xs-4" id="mapBtn">View in Google Maps</a>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="links">
@@ -149,67 +204,11 @@
 				</div>
 			</div>
 		</section>
+	</main>
 
-		<section id="contactForm">
-			<div class="container" id="contactContent">
-				<h3>Please feel free to contact us any way you like. We are happy to answer any questions you may have. We are a resource for any and all BMW & MINI owners.</h3>
-				<div class="row">
-					<div class="col-sm-6">
-						<h1 id="phone">Call: 503-241-1717</h1>
-						<br>
-						<p>Or send us a message and an associate will be in touch with you soon.</p>
-						<hr>
-						<form class="form-horizontal" action="mailto:seanhaines13@gmail.com" method="post" enctype="text/plain" name="EmailTestForm">
-							<div class="form-group">
-								<label for="name" class="col-sm-2 control-label">Name</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="nameInput" placeholder="First and Last name">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="email" class="col-sm-2 control-label">Email</label>
-								<div class="col-sm-10">
-									<input type="email" class="form-control" id="emailInput" placeholder="example@email.com">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="phone" class="col-sm-2 control-label">Phone</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="phone" placeholder="555-555-5555">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="inputPassword3" class="col-sm-2 control-label">Message</label>
-								<div class="col-sm-10">
-									<textarea class="form-control" id="textbox" rows="3" placeholder="Message"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
-									<button type="submit" class="btn btn-primary">Send</button>
-									<button type="reset" class="btn btn-danger">Reset</button>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="col-sm-6">
-						<img src="client/images/Google_Maps.png" alt="google map" class="img-rounded img-responsive">
-						<div class="col-xs-6">
-							1321 NW 17th Ave<br>
-							Portland, Oregon 97209<br>
-							<abbr title="Phone">Phone:</abbr> 503-241-1717<br>
-							<abbr title="Fax">Fax:</abbr> 503-477-8265<br>
-						</div>
-						<a href="https://www.google.com/maps/dir//1321+NW+17th+Ave,+Portland,+OR+97209/" target="_blank" class="btn btn-default col-xs-6" id="mapBtn">View in Google Maps</a>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<div class="footer" data-stellar-background-ratio="0.4">
-		<p>DynaSport LLC | MINI and BMW Service, Repair and Performance | Portland, Oregon</p>
-	</div>
+	<footer>
+		<span>DynaSport LLC | MINI and BMW Service, Repair and Performance | Portland, Oregon</span>
+	</footer>
 	
 	<!-- SCRIPTS -->
 	<!-- jQuery -->

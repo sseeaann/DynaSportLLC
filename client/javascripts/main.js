@@ -9,19 +9,22 @@ $(document).ready(function(){
 	// For nav bar: 
 	$(window).bind('scroll',function(){
 		var navHeight = 700;
-		($(window).scrollTop() > navHeight) ? $('.nav').addClass('goToTop') : $('.nav').removeClass('goToTop');
+		// var navHeight = $('.nav').height();
+		// console.log("NAV OFFSET: ", $('.nav').offset());
+		($(window).scrollTop() > navHeight) ? $('nav').addClass('goToTop') : $('nav').removeClass('goToTop');
 	});
 
 	$(window).scroll(function(){
 		// console.log(scrollY);
 		var x = $(this).scrollTop();
 		if (x > 300) {
+			// $('#twoContent').addClass('isVisible');
 			$('#twoContent').show();
 		}
 		if (x > 700) {
-			$('.nav').slideDown('slow');
+			$('nav').slideDown('slow');
 		} else {
-			$('.nav').hide('slow');
+			$('nav').hide('slow');
 		}
 		if (x > 900) {
 			$('#quotesContent').slideDown('slow');
@@ -30,10 +33,10 @@ $(document).ready(function(){
 			$('#instafeed').show();
 		}
 		if (x > 1600) {
-			$('#linksContent').fadeIn('slow');
+			$('#contactContent').slideDown(500);
 		}
 		if (x > 2000) {
-			$('#contactContent').slideDown(500);
+			$('#linksContent').fadeIn('slow');
 		}
 	});
 
