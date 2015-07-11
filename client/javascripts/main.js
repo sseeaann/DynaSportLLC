@@ -46,10 +46,10 @@ $(document).ready(function(){
 		accessToken: '1765479990.467ede5.5373d2910670417394cfeabb0a03fdcf',
 		links: true,
 		sortBy: 'random',
-		limit: 4,
 		resolution: 'standard_resolution',
 		after: function(){
 			var images = $('#instafeed').find('img');
+			$(images.slice(4, images.length)).remove();
 			$.each(images, function(index, image){
 				var delay = (index * 75) + 'ms';
 				$(image).css('-webkit-animation-delay', delay);
