@@ -148,11 +148,7 @@ h1, h2 {
 		div#contactContent {
 			display: none;
 		}
-			div#contactContent h3 {
-				padding: 1.5em 0;
-				text-align: center;
-			}
-			div#contactContent p#phone {
+			div#contactContent h2#phone {
 				font-weight: bold;
 				color: #ab8c5e;
 				line-height: 2em;
