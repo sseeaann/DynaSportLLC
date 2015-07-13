@@ -6,6 +6,7 @@ body {
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: #111;
 }
 
 h1, h2 { 
@@ -200,18 +201,19 @@ h1, h2 {
 		background-color: black;
 		position: relative;
 		text-align: center;
+		z-index: -1;
 	}
 
-		footer span {
-			position: relative;
-			top: 40px;
-			margin: 0 auto;
+		footer p {
+			position: fixed;
+			bottom: 35px;
+			left: 0;
+			right: 0;
 			color: #333;
 			font-size: 1.2em;
 		}
-		footer span:hover {
-			color: #555;
-			cursor: crosshair;
+		footer p:hover {
+			color: #aaa;
 		}
 
 	div.content {
