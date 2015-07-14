@@ -26,6 +26,7 @@ h1, h2 {
 		header i:hover {
 			color: #fff;
 			text-shadow: 1px 1px 5px black;
+			cursor: pointer;
 		}
 		div#headerContent {
 			text-align: center;
