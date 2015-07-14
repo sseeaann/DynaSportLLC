@@ -6,7 +6,8 @@ body {
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #272b30;
+	/*background-color: #272b30;*/
+	background-color: #444;
 }
 
 h1, h2 { 
@@ -19,10 +20,17 @@ h1, h2 {
 		background-size: cover;
 		background-attachment: fixed;
 	}
+		header i {
+			color: #eee;
+		}
+		header i:hover {
+			color: #fff;
+			text-shadow: 1px 1px 5px black;
+		}
 		div#headerContent {
 			text-align: center;
 			position: relative;
-			top: 30vh;
+			top: 15vh;
 		}
 			span.dynasport {
 				font-size: 3em;
@@ -95,45 +103,51 @@ h1, h2 {
 			min-height: 100vh; 
 			padding: 0;
 		}
-			div#aboutUs {
-				background-color: white;
-				padding: 5%;
-				margin: 0;
-				min-height: 50vh;
-				color: #222;
+			div.sectionLeft h2 {
+				font-family: 'Racing Sans One', arial;
 			}
-			div#performance {
-				background-color: #222;
-				padding: 5%;
-				margin: 0;
-				min-height: 50vh;
-			}
+				div#aboutUs {
+					background-color: white;
+					padding: 5%;
+					margin: 0;
+					min-height: 50vh;
+					color: #222;
+				}
+				div#performance {
+					background-color: #222;
+					padding: 5%;
+					margin: 0;
+					min-height: 50vh;
+				}
 
 	section#quotes{
 		height: 40vh;
 	}
-		div#quotesContent {
-			
-			background-color: #ddd;
-			height: 100%;
-			padding: 50px 0;
-		}
 	@media only screen and (max-width: 767px){
 		section#quotes{
 			min-height: 50vh;
 		}
 	}
-			#quote-carousel {
-				text-align: center;
+		div#quotesContent {
+			background-color: #ddd;
+			height: 100%;
+			padding: 50px 0;
+		}
+			div#quotesContent h2 {
+				font-family: 'Racing Sans One', arial;
 				color: #272b30;
 			}
-				.carousel-inner {
-					margin-top: 10px;
-					border-top: 1px solid black;
+				#quote-carousel {
+					text-align: center;
+					color: #272b30;
 				}
-					blockquote {
-						border-left: none;
+					.carousel-inner {
+						margin-top: 10px;
+						border-top: 1px solid black;
 					}
+						blockquote {
+							border-left: none;
+						}
 
 		div#instafeed {
 			
@@ -207,11 +221,10 @@ h1, h2 {
 			bottom: 35px;
 			left: 0;
 			right: 0;
-			color: #272b30;
+			/*color: #272b30;*/
+			color: #444;
 			font-size: 1.2em;
-		}
-		footer p:hover {
-			color: #aaa;
+			font-weight: bold;
 		}
 
 	div.content {

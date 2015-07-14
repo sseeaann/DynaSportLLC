@@ -10,16 +10,9 @@ $(document).ready(function(){
 	});
 	wow.init();
 
-	$('#quote-carousel').carousel({
-		pause: false,
-		interval: 15000
-	});
-
 	// For nav bar: 
 	$(window).bind('scroll',function(){
-		// var navHeight = 700;
 		var navHeight = $('.nav').height();
-		// console.log("NAV OFFSET: ", $('.nav').offset());
 		($(window).scrollTop() > navHeight) ? $('nav').addClass('goToTop') : $('nav').removeClass('goToTop');
 	});
 
@@ -33,6 +26,24 @@ $(document).ready(function(){
 		}else {
 			$('nav').slideUp();
 		}
+	});
+
+	$('#toTop').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1500);
+	        return false;
+	      }
+	    }
+	  });
+
+	$('#quote-carousel').carousel({
+		pause: false,
+		interval: 15000
 	});
 
 	var userFeed = new Instafeed({
