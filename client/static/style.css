@@ -81,7 +81,7 @@ h1, h2 {
 		min-height: 100vh;
 	}
 		div#twoContent {
-			display: none;
+			
 		}
 
 			div.sectionRight {
@@ -112,7 +112,7 @@ h1, h2 {
 		height: 40vh;
 	}
 		div#quotesContent {
-			display: none;
+			
 			background-color: #ddd;
 			height: 100%;
 			padding: 50px 0;
@@ -135,7 +135,7 @@ h1, h2 {
 					}
 
 		div#instafeed {
-			display: none;
+			
 		}
 			#instafeed img {
 			  width: 25%;
@@ -147,7 +147,7 @@ h1, h2 {
 		padding: 20px 0;
 	}
 		div#contactContent {
-			display: none;
+			
 		}
 			div#contactContent h2#phone {
 				font-weight: bold;
@@ -176,7 +176,7 @@ h1, h2 {
 		/*min-height: 30vh;*/
 	}
 		div#linksContent {
-			display: none;
+			
 		}
 			.topLinks {
 				background-color: #111;

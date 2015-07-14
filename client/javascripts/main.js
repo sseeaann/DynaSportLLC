@@ -1,6 +1,15 @@
 $(document).ready(function(){
 	$.stellar();
 
+	var wow = new WOW({
+		boxClass: 'wow',
+		animateClass: 'animated',
+		offset: 100,
+		mobile: true,
+		live: true
+	});
+	wow.init();
+
 	$('#quote-carousel').carousel({
 		pause: false,
 		interval: 15000
@@ -14,29 +23,15 @@ $(document).ready(function(){
 		($(window).scrollTop() > navHeight) ? $('nav').addClass('goToTop') : $('nav').removeClass('goToTop');
 	});
 
+	var windowH = $(window).height();
+	var stickToBot = windowH - $('nav').outerHeight(true);
+
 	$(window).scroll(function(){
-		// console.log(scrollY);
-		var x = $(this).scrollTop();
-		if (x > 300) {
-			// $('#twoContent').addClass('isVisible');
-			$('#twoContent').show();
-		}
-		if (x > 700) {
+		var scrollVal = $(this).scrollTop();
+		if(scrollVal > stickToBot){
 			$('nav').slideDown('slow');
-		} else {
+		}else {
 			$('nav').hide('slow');
-		}
-		if (x > 900) {
-			$('#quotesContent').slideDown('slow');
-		}
-		if (x > 1200) {
-			$('#instafeed').show();
-		}
-		if (x > 1600) {
-			$('#contactContent').slideDown(500);
-		}
-		if (x > 2000) {
-			$('#linksContent').fadeIn('slow');
 		}
 	});
 
@@ -57,7 +52,7 @@ $(document).ready(function(){
 				$(image).css('-ms-animation-delay', delay);
 				$(image).css('-o-animation-delay', delay);
 				$(image).css('animation-delay', delay);
-				$(image).addClass('animated fadeInUp');
+				$(image).addClass('wow fadeInRight');
 			});
 		},
 		template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
