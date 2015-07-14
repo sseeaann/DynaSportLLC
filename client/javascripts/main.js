@@ -17,21 +17,21 @@ $(document).ready(function(){
 
 	// For nav bar: 
 	$(window).bind('scroll',function(){
-		var navHeight = 700;
-		// var navHeight = $('.nav').height();
+		// var navHeight = 700;
+		var navHeight = $('.nav').height();
 		// console.log("NAV OFFSET: ", $('.nav').offset());
 		($(window).scrollTop() > navHeight) ? $('nav').addClass('goToTop') : $('nav').removeClass('goToTop');
 	});
 
-	var windowH = $(window).height();
-	var stickToBot = windowH - $('nav').outerHeight(true);
+	var winHeight = $(window).height();
+	var sticky = winHeight - $('nav').outerHeight(true);
 
 	$(window).scroll(function(){
 		var scrollVal = $(this).scrollTop();
-		if(scrollVal > stickToBot){
-			$('nav').slideDown('slow');
+		if(scrollVal > sticky){
+			$('nav').slideDown();
 		}else {
-			$('nav').hide('slow');
+			$('nav').slideUp();
 		}
 	});
 
