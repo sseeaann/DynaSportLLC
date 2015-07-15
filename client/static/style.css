@@ -227,7 +227,7 @@ h1, h2 {
 		}
 
 	div.content {
-		font-size: 1.5em;
+		font-size: 1.6em;
 	}
 
 	.goToTop {
@@ -239,6 +239,7 @@ h1, h2 {
 
 	.modal-footer {
 		text-align: center;
+		font-size: 1.5em;
 	}
 
 	.dashLights {
@@ -253,7 +254,7 @@ h1, h2 {
 	.light_info {
 		display: none;
 	}
-		p,ul.light_info {
+		p.light_info, ul.light_info {
 			font-size: 1.5em;
 		}
 
