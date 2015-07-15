@@ -6,7 +6,6 @@ body {
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
-	/*background-color: #272b30;*/
 	background-color: #444;
 }
 
@@ -222,7 +221,6 @@ h1, h2 {
 			bottom: 35px;
 			left: 0;
 			right: 0;
-			/*color: #272b30;*/
 			color: #444;
 			font-size: 1.2em;
 			font-weight: bold;
@@ -238,3 +236,19 @@ h1, h2 {
 		z-index: 999;
 		width: 100%;
 	}
+
+	.dashLights {
+		text-align: center;
+	}
+		.dashLights img {
+			cursor: pointer;
+		}
+
+	#bmwLights, 
+	#miniLights, 
+	.light_info {
+		display: none;
+	}
+		.light_info p {
+			font-size: 1.5em;
+		}

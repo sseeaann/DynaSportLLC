@@ -10,14 +10,38 @@ $(document).ready(function(){
 	});
 	wow.init();
 
-	// For nav bar: 
+	$('[data-tooltip="tooltip"]').tooltip();
+
+// Modal:
+	// Car Make
+	$('.light_icons').hide();
+	$('.carTog').click(function(){
+		$('.light_info, .light_icons').hide();
+		$('.' + $(this).data('id')).toggle();
+	});
+	// Make lights
+	$('.light_info').hide();
+	$('.tog').click(function(){
+		$('.light_info').hide();
+		$('.' + $(this).data('id')).toggle();
+	});
+	// Clear when modal is closed
+	$('[data-dismiss="modal"]').click(function(){
+		$('.light_info, .light_icons').hide();
+	});
+
+	
+
+// For nav bar: 
 	$(window).bind('scroll',function(){
 		var navHeight = $('.nav').height();
 		($(window).scrollTop() > navHeight) ? $('nav').addClass('goToTop') : $('nav').removeClass('goToTop');
 	});
 
-	var winHeight = $(window).height();
-	var sticky = winHeight - $('nav').outerHeight(true);
+	var winHeight = $(window).height(),
+		sticky = winHeight - $('nav').outerHeight(true),
+		animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+		jello = 'animated jello';
 
 	$(window).scroll(function(){
 		var scrollVal = $(this).scrollTop();
@@ -40,6 +64,12 @@ $(document).ready(function(){
 	      }
 	    }
 	  });
+
+	$('#toTop').hover(function(){
+		$('#logo').addClass(jello).one(animationEnd, function(){
+			$(this).removeClass(jello);
+		});
+	});
 
 	$('#quote-carousel').carousel({
 		pause: false,

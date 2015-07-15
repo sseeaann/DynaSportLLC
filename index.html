@@ -20,7 +20,7 @@
 <!-- 	ᕙ(⇀‸↼‶)ᕗ	-->
 	<header id="head">
 		<div class="container">
-			<i class="fa fa-info-circle fa-5x"></i>
+			<a type="button" data-toggle="modal" data-target="#myModal" data-tooltip="tooltip" data-placement="bottom" title="Dashboard Lighting Guide"><i class="fa fa-info-circle fa-5x"></i></a>
 			<!-- <i class="fa fa-exclamation-triangle fa-5x"></i> -->
 		</div>
 		<div id="headerContent" data-stellar-ratio="0.4">
@@ -29,9 +29,111 @@
 		</div>
 	</header>
 
+<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle fa-lg"></i></button>
+					<h4 class="modal-title">Dashboard Lights</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-3">
+							<h4>Select Your Make:</h4>
+							<a type="button" class="btn btn-info btn-lg carTog" data-id="bmwLights">BMW</a> <a type="button" class="btn btn-danger btn-lg carTog" data-id="miniLights">MINI</a>
+						</div>
+						<div class="col-md-9 dashLights">
+							<h4>Select Your Light:</h4>
+							<div class="light_icons bmwLights">
+								<img src="client/images/bmwLights/turnsignals.jpg" alt="bmw turnsignals" class="tog" data-id="bmwTurns">
+								<img src="client/images/bmwLights/parkingBreak.jpg" alt="bmw parking break" class="tog" data-id="bmwPbreak">
+								<img src="client/images/bmwLights/AutoHold.jpg" alt="bmw automatic hold" class="tog" data-id="bmwAutoHold">
+								<img src="client/images/bmwLights/fogLamps.jpg" alt="bmw fog lamps" class="tog" data-id="bmwFogLamps">
+								<img src="client/images/bmwLights/highBeams.jpg" alt="bmw high beams" class="tog" data-id="bmwHighBeams">
+								<img src="client/images/bmwLights/highBeamAssist.jpg" alt="bmw high beam assistant" class="tog" data-id="bmwHighBeamAssist">
+							</div>
+							<div class="light_icons miniLights">
+								
+							</div>
+						</div>
+					</div>
+					<hr>
+					<!-- BMW Lighting -->
+					<div class="row light_info bmwTurns">
+						<div class="col-md-4">
+							<h4>Light:</h4>
+							<img src="client/images/bmwLights/turnsignals.jpg" alt="bmw turnsignals">
+						</div>
+						<div class="col-md-8">
+							<h4>Info / Actions:</h4>
+							<p>Turn Signals</p>
+						</div>
+					</div>
+					<div class="row light_info bmwPbreak">
+						<div class="col-md-4">
+							<h4>Light:</h4>
+							<img src="client/images/bmwLights/parkingBreak.jpg" alt="bmw parking break">
+						</div>
+						<div class="col-md-8">
+							<h4>Info / Actions:</h4>
+							<p>Parking Break</p>
+						</div>
+					</div>
+					<div class="row light_info bmwAutoHold">
+						<div class="col-md-4">
+							<h4>Light:</h4>
+							<img src="client/images/bmwLights/AutoHold.jpg" alt="bmw parking break">
+						</div>
+						<div class="col-md-8">
+							<h4>Info / Actions:</h4>
+							<p>Automatic Hold</p>
+						</div>
+					</div>
+					<div class="row light_info bmwFogLamps">
+						<div class="col-md-4">
+							<h4>Light:</h4>
+							<img src="client/images/bmwLights/fogLamps.jpg" alt="bmw fog lamps">
+						</div>
+						<div class="col-md-8">
+							<h4>Info / Actions:</h4>
+							<p>Front Fog Lamps</p>
+						</div>
+					</div>
+					<div class="row light_info bmwHighBeams">
+						<div class="col-md-4">
+							<h4>Light:</h4>
+							<img src="client/images/bmwLights/highBeams.jpg" alt="bmw high beams">
+						</div>
+						<div class="col-md-8">
+							<h4>Info / Actions:</h4>
+							<p>High Beams</p>
+						</div>
+					</div>
+
+					<div class="row light_info bmwHighBeamAssist">
+						<div class="col-md-4">
+							<h4>Light:</h4>
+							<img src="client/images/bmwLights/highBeamAssist.jpg" alt="bmw high beam assistant">
+						</div>
+						<div class="col-md-8">
+							<h4>Info / Actions:</h4>
+							<p>High Beam Assistant</p>
+						</div>
+					</div>
+					<!-- END BMW Lighting -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END Modal -->
+
 	<nav>
 		<div class="container">
-			<a href="#head" id="toTop"><img src="client/images/dynalogo2.png" alt="dynasport logo"></a>
+			<a href="#head" id="toTop"><img src="client/images/dynalogo2.png" alt="dynasport logo" id="logo"></a>
 			<p>503-241-1717</p>
 		</div>
 	</nav>
