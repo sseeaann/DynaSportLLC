@@ -1,6 +1,8 @@
 $(document).ready(function(){
+// Initialize stellar.js for parallax effect:
 	$.stellar();
 
+// WOW.js working in conjunction with Animate.css:
 	var wow = new WOW({
 		boxClass: 'wow',
 		animateClass: 'animated',
@@ -10,6 +12,7 @@ $(document).ready(function(){
 	});
 	wow.init();
 
+// Tooltip:
 	$('[data-tooltip="tooltip"]').tooltip();
 
 // Modal:
@@ -33,21 +36,21 @@ $(document).ready(function(){
 	
 
 // For nav bar: 
-	$(window).bind('scroll',function(){
-		var navHeight = $('.nav').height();
-		($(window).scrollTop() > navHeight) ? $('nav').addClass('goToTop') : $('nav').removeClass('goToTop');
-	});
-
 	var winHeight = $(window).height(),
 		sticky = winHeight - $('nav').outerHeight(true),
 		animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 		jello = 'animated jello';
 
+	$(window).bind('scroll',function(){
+		var navHeight = $('.nav').height();
+		($(window).scrollTop() > navHeight) ? $('nav').addClass('goToTop') : $('nav').removeClass('goToTop');
+	});
+
 	$(window).scroll(function(){
 		var scrollVal = $(this).scrollTop();
 		if(scrollVal > sticky){
 			$('nav').slideDown();
-		}else {
+		} else {
 			$('nav').slideUp();
 		}
 	});
@@ -64,18 +67,20 @@ $(document).ready(function(){
 	      }
 	    }
 	  });
-
+	
 	$('#toTop').hover(function(){
 		$('#logo').addClass(jello).one(animationEnd, function(){
 			$(this).removeClass(jello);
 		});
 	});
 
+// Shop Reviews Carousel:
 	$('#quote-carousel').carousel({
 		pause: false,
 		interval: 15000
 	});
 
+// Instagram feed:
 	var userFeed = new Instafeed({
 		get: 'user',
 		userId: 1765479990,
