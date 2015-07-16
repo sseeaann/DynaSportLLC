@@ -367,29 +367,33 @@
 						<br>
 						<p>Or send us a message and an associate will be in touch with you soon.</p>
 						<hr>
-						<form class="form-horizontal" action="mailto:seanhaines13@gmail.com" method="post" enctype="text/plain" name="EmailTestForm">
+						<form class="form-horizontal" action="mailto:seanhaines13@gmail.com" method="post" enctype="text/plain" name="msgForm" data-toggle="validator" role="form">
 							<div class="form-group">
 								<label for="nameInput" class="col-sm-1 control-label">Name</label>
 								<div class="col-sm-11">
-									<input type="text" class="form-control" id="nameInput" placeholder="First and Last name">
+									<input type="text" class="form-control" id="nameInput" placeholder="First and Last name" required>
+									<span class="help-block with-errors"></span>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="emailInput" class="col-sm-1 control-label">Email</label>
 								<div class="col-sm-11">
-									<input type="email" class="form-control" id="emailInput" placeholder="example@email.com">
+									<input type="email" class="form-control" id="emailInput" placeholder="example@email.com" required>
+									<span class="help-block with-errors"></span>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="phoneInput" class="col-sm-1 control-label">Phone</label>
 								<div class="col-sm-11">
-									<input type="text" class="form-control" id="phoneInput" placeholder="555-555-5555">
+									<input type="text" class="form-control" id="phoneInput" placeholder="555-555-5555" required>
+									<span class="help-block with-errors"></span>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="messageTextbox" class="col-sm-1 control-label">Message</label>
 								<div class="col-sm-11">
-									<textarea class="form-control" id="messageTextbox" rows="3" placeholder="Message"></textarea>
+									<textarea class="form-control" id="messageTextbox" rows="3" placeholder="Message" required></textarea>
+									<span class="help-block with-errors"></span>
 								</div>
 							</div>
 							<div class="form-group">
@@ -468,5 +472,7 @@
 	<script type="text/javascript" src="client/javascripts/stellar.js"></script>
 	<!-- WOW.js -->
 	<script type="text/javascript" src="client/javascripts/wow.min.js"></script>
+	<!-- Validator.js -->
+	<script type="text/javascript" src="client/javascripts/validator.js"></script>
 </body>
 </html>
