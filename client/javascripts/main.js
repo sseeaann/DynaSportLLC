@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 // For nav bar: 
 	var winHeight = $(window).height(),
-		sticky = winHeight - $('nav').outerHeight(true),
+		showNav = winHeight - $('nav').outerHeight(true),
 		animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 		jello = 'animated jello';
 
@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		var scrollVal = $(this).scrollTop();
-		if(scrollVal > sticky){
+		if(scrollVal > showNav){
 			$('nav').slideDown();
 		} else {
 			$('nav').slideUp();
@@ -67,7 +67,7 @@ $(document).ready(function(){
 	      }
 	    }
 	  });
-	
+
 	$('#toTop').hover(function(){
 		$('#logo').addClass(jello).one(animationEnd, function(){
 			$(this).removeClass(jello);
