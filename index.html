@@ -40,93 +40,116 @@
 					<div class="row">
 						<div class="col-md-3">
 							<h4>Select Your Make:</h4>
-							<a type="button" class="btn btn-info btn-lg carTog" data-id="bmwLights">BMW</a> <a type="button" class="btn btn-danger btn-lg carTog" data-id="miniLights">MINI</a>
+							<a type="button" class="btn btn-info btn-lg carTog bmw_light" data-id="bmwLights">BMW</a> <a type="button" class="btn btn-danger btn-lg carTog mini_light" data-id="miniLights">MINI</a>
 						</div>
 						<div class="col-md-9 dashLights">
-							<h4>Select Your Light:</h4>
+							<h4>Select Your Light: <span id="bmwSelected">BMW</span><span id="miniSelected">MINI</span></h4>
 							<div class="light_icons bmwLights">
-								<!-- Standard Operating Lights -->
-								<img src="client/images/bmwLights/turnsignals.jpg" alt="bmw turnsignals" class="tog" data-id="bmwTurns">
-								<img src="client/images/bmwLights/parkingBreak.jpg" alt="bmw parking break" class="tog" data-id="bmwPbreak">
-								<img src="client/images/bmwLights/AutoHold.jpg" alt="bmw automatic hold" class="tog" data-id="bmwAutoHold">
-								<img src="client/images/bmwLights/fogLamps.jpg" alt="bmw fog lamps" class="tog" data-id="bmwFogLamps">
-								<img src="client/images/bmwLights/highBeams.jpg" alt="bmw high beams" class="tog" data-id="bmwHighBeams">
-								<img src="client/images/bmwLights/highBeamAssist.jpg" alt="bmw high beam assistant" class="tog" data-id="bmwHighBeamAssist">
-								<img src="client/images/bmwLights/parkingLamps.jpg" alt="bmw parking lamps" class="tog" data-id="bmwParkingLamps">
-								<img src="client/images/bmwLights/activeCruiseCtrl.jpg" alt="bmw active cruise control" class="tog" data-id="bmwActiveCruise">
-								<img src="client/images/bmwLights/vehicleDetection.jpg" alt="bmw vehicle detection" class="tog" data-id="bmwVehicleDetection">
-								<img src="client/images/bmwLights/cruiseCtrl.jpg" alt="bmw cruise control" class="tog" data-id="bmwCruiseCtrl">
-								<img src="client/images/bmwLights/laneWarning.jpg" alt="bmw lane departure warning" class="tog" data-id="bmwLaneWarning">
-								<!-- Warning Lights -->
-								<img src="client/images/bmwLights/airbag.jpg" alt="bmw airbag" class="tog" data-id="bmwAirBag">
-								<img src="client/images/bmwLights/ABS.jpg" alt="bmw anitlock brake" class="tog" data-id="bmwABS">
-								<img src="client/images/bmwLights/battery.jpg" alt="bmw battery" class="tog" data-id="bmwBattery">
-								<img src="client/images/bmwLights/caution.jpg" alt="bmw caution" class="tog" data-id="bmwCaution">
-								<img src="client/images/bmwLights/brakePads.jpg" alt="bmw brake pads" class="tog" data-id="bmwBrakePads">
-								<img src="client/images/bmwLights/coolant.jpg" alt="bmw coolant level" class="tog" data-id="bmwCoolant">
-								<img src="client/images/bmwLights/DSC.jpg" alt="bmw Dynamic Stability Control" class="tog" data-id="bmwDSC">
-								<img src="client/images/bmwLights/empty.jpg" alt="bmw gas empty" class="tog" data-id="bmwEmpty">
-								<img src="client/images/bmwLights/overheating.jpg" alt="bmw overheating" class="tog" data-id="bmwOverheat">
-								<img src="client/images/bmwLights/engine.jpg" alt="bmw engine" class="tog" data-id="bmwEngine">
-								<img src="client/images/bmwLights/bulb.jpg" alt="bmw exterior lighting" class="tog" data-id="bmwBulb">
-								<img src="client/images/bmwLights/gasCap.jpg" alt="bmw gas cap" class="tog" data-id="bmwGasCap">
-								<img src="client/images/bmwLights/oilLevel.jpg" alt="bmw oil level" class="tog" data-id="bmwOilLevel">
-								<img src="client/images/bmwLights/safetyBelt.jpg" alt="bmw safety belt" class="tog" data-id="bmwSafetyBelt">
-								<img src="client/images/bmwLights/service.jpg" alt="bmw service" class="tog" data-id="bmwService">
-								<img src="client/images/bmwLights/steering.jpg" alt="bmw steering" class="tog" data-id="bmwSteering">
-								<img src="client/images/bmwLights/temp.jpg" alt="bmw outside temperature" class="tog" data-id="bmwTemp">
-								<img src="client/images/bmwLights/TPM.jpg" alt="bmw tire pressure monitor" class="tog" data-id="bmwTPM">
-								<img src="client/images/bmwLights/doorOpen.jpg" alt="bmw door open" class="tog" data-id="bmwDoor">
-								<img src="client/images/bmwLights/wiperFluid.jpg" alt="bmw window washer fluid" class="tog" data-id="bmwWiperFluid">
+								<img src="client/images/bmwLights/turnsignals.jpg" alt="turnsignals" class="tog" data-id="bmwTurns">
+								<img src="client/images/bmwLights/fogLamps.jpg" alt="fog lamps" class="tog" data-id="bmwFogLamps">
+								<img src="client/images/bmwLights/highBeams.jpg" alt="high beams" class="tog" data-id="bmwHighBeams"><img src="client/images/bmwLights/parkingBreak.jpg" alt="parking break" class="tog" data-id="bmwPbreak">
+								<img src="client/images/bmwLights/parkingLamps.jpg" alt="parking lamps" class="tog" data-id="bmwParkingLamps">
+								<img src="client/images/bmwLights/airbag.jpg" alt="airbag" class="tog" data-id="bmwAirBag">
+								<img src="client/images/bmwLights/ABS.jpg" alt="anitlock brake" class="tog" data-id="bmwABS">
+								<img src="client/images/bmwLights/battery.jpg" alt="battery" class="tog" data-id="bmwBattery">
+								<img src="client/images/bmwLights/caution.jpg" alt="caution" class="tog" data-id="bmwCaution">
+								<img src="client/images/bmwLights/coolant.jpg" alt="coolant level" class="tog" data-id="bmwCoolant">
+								<img src="client/images/bmwLights/empty.jpg" alt="gas empty" class="tog" data-id="bmwEmpty">
+								<img src="client/images/bmwLights/overheating.jpg" alt="overheating" class="tog" data-id="bmwOverheat">
+								<img src="client/images/bmwLights/engine.jpg" alt="engine" class="tog" data-id="bmwEngine">
+								<img src="client/images/bmwLights/bulb.jpg" alt="exterior lighting" class="tog" data-id="bmwBulb">
+								<img src="client/images/bmwLights/oilLevel.jpg" alt="oil level" class="tog" data-id="bmwOilLevel">
+								<img src="client/images/bmwLights/safetyBelt.jpg" alt="safety belt" class="tog" data-id="bmwSafetyBelt">
+								<img src="client/images/bmwLights/TPM.jpg" alt="tire pressure monitor" class="tog" data-id="bmwTPM">
+								<img src="client/images/bmwLights/doorOpen.jpg" alt="door open" class="tog" data-id="bmwDoor">
+								<img src="client/images/bmwLights/wiperFluid.jpg" alt="window washer fluid" class="tog" data-id="bmwWiperFluid">
+								<img src="client/images/bmwLights/AutoHold.jpg" alt="automatic hold" class="tog" data-id="bmwAutoHold">
+								<img src="client/images/bmwLights/highBeamAssist.jpg" alt="high beam assistant" class="tog" data-id="bmwHighBeamAssist">
+								<img src="client/images/bmwLights/activeCruiseCtrl.jpg" alt="active cruise control" class="tog" data-id="bmwActiveCruise">
+								<img src="client/images/bmwLights/vehicleDetection.jpg" alt="vehicle detection" class="tog" data-id="bmwVehicleDetection">
+								<img src="client/images/bmwLights/cruiseCtrl.jpg" alt="cruise control" class="tog" data-id="bmwCruiseCtrl">
+								<img src="client/images/bmwLights/laneWarning.jpg" alt="lane departure warning" class="tog" data-id="bmwLaneWarning">
+								<img src="client/images/bmwLights/brakePads.jpg" alt="brake pads" class="tog" data-id="bmwBrakePads">
+								<img src="client/images/bmwLights/DSC.jpg" alt="Dynamic Stability Control" class="tog" data-id="bmwDSC">
+								<img src="client/images/bmwLights/gasCap.jpg" alt="gas cap" class="tog" data-id="bmwGasCap">
+								<img src="client/images/bmwLights/service.jpg" alt="service" class="tog" data-id="bmwService">
+								<img src="client/images/bmwLights/steering.jpg" alt="steering" class="tog" data-id="bmwSteering">
+								<img src="client/images/bmwLights/temp.jpg" alt="outside temperature" class="tog" data-id="bmwTemp">
 							</div>
 							<div class="light_icons miniLights">
-								
+								<img src="client/images/miniLights/safetyBelt.jpg" alt="safety belt" class="tog" data-id="miniSafetyBelt">
+								<img src="client/images/miniLights/airbag.jpg" alt="airbag" class="tog" data-id="miniAirBag">
+								<img src="client/images/miniLights/power-steering.jpg" alt="power steering" class="tog" data-id="miniPowerSteering">
+								<img src="client/images/miniLights/outside-temp.jpg" alt="outside temperature" class="tog" data-id="miniTemp">
+								<img src="client/images/miniLights/engine-no-start.jpg" alt="engine refuses to start" class="tog" data-id="miniEngineNoStart">
+								<img src="client/images/miniLights/driver-door-on.jpg" alt="ignition on door open" class="tog" data-id="miniDoorEngineOn">
+								<img src="client/images/miniLights/diesel-preheat.jpg" alt="diesel preheat" class="tog" data-id="miniDieselPreheat">
+								<img src="client/images/miniLights/remote-control.jpg" alt="remote control faulty" class="tog" data-id="miniRemoteControl">
+								<img src="client/images/miniLights/battery-remote.jpg" alt="remote control battery" class="tog" data-id="miniBatteryRemote">
+								<img src="client/images/miniLights/engine-malfunction.jpg" alt="engine malfunction" class="tog" data-id="miniEngineMalfunction">
+								<img src="client/images/miniLights/engine.jpg" alt="engine fault" class="tog" data-id="miniEngine">
+								<img src="client/images/miniLights/battery.jpg" alt="battery" class="tog" data-id="miniBattery">
+								<img src="client/images/miniLights/brake.jpg" alt="brake" class="tog" data-id="miniBrake">
+								<img src="client/images/miniLights/engine-temp.jpg" alt="engine temperature" class="tog" data-id="miniEngineTemp">
+								<img src="client/images/miniLights/vehicle-on-stand.jpg" alt="service stand" class="tog" data-id="miniServiceStand">
 							</div>
 						</div>
 					</div>
 					<hr>
-					<!-- BMW Lighting -->
 					<div class="row">
 						<div class="col-md-4 lighting">
 							<h4>Light:</h4>
-							<!-- Standard Operating Lights -->
-							<img src="client/images/bmwLights/turnsignals.jpg" alt="bmw turnsignals" class="light_info bmwTurns">
+							<!-- BMW Lighting -->
+							<img src="client/images/bmwLights/turnsignals.jpg" alt="turnsignals" class="light_info bmwTurns">
+							<img src="client/images/bmwLights/fogLamps.jpg" alt="fog lamps" class="light_info bmwFogLamps">
+							<img src="client/images/bmwLights/highBeams.jpg" alt="high beams" class="light_info bmwHighBeams">
+							<img src="client/images/bmwLights/parkingLamps.jpg" alt="parking lamps" class="light_info bmwParkingLamps">
+							<img src="client/images/bmwLights/airbag.jpg" alt="airbag" class="light_info bmwAirBag">
+							<img src="client/images/bmwLights/ABS.jpg" alt="anitlock brake" class="light_info bmwABS">
+							<img src="client/images/bmwLights/battery.jpg" alt="battery" class="light_info bmwBattery">
+							<img src="client/images/bmwLights/caution.jpg" alt="caution" class="light_info bmwCaution">
+							<img src="client/images/bmwLights/coolant.jpg" alt="coolant level" class="light_info bmwCoolant">
+							<img src="client/images/bmwLights/empty.jpg" alt="gas empty" class="light_info bmwEmpty">
+							<img src="client/images/bmwLights/overheating.jpg" alt="overheating" class="light_info bmwOverheat">
+							<img src="client/images/bmwLights/engine.jpg" alt="engine" class="light_info bmwEngine">
+							<img src="client/images/bmwLights/bulb.jpg" alt="exterior lighting" class="light_info bmwBulb">
+							<img src="client/images/bmwLights/oilLevel.jpg" alt="oil level" class="light_info bmwOilLevel">
+							<img src="client/images/bmwLights/safetyBelt.jpg" alt="safety belt" class="light_info bmwSafetyBelt">
+							<img src="client/images/bmwLights/TPM.jpg" alt="tire pressure monitor" class="light_info bmwTPM">
+							<img src="client/images/bmwLights/doorOpen.jpg" alt="door open" class="light_info bmwDoor">
+							<img src="client/images/bmwLights/wiperFluid.jpg" alt="window washer fluid" class="light_info bmwWiperFluid">
 							<img src="client/images/bmwLights/parkingBreak.jpg" alt="bmw parking break" class="light_info bmwPbreak">
 							<img src="client/images/bmwLights/AutoHold.jpg" alt="bmw automatic hold" class="light_info bmwAutoHold">
-							<img src="client/images/bmwLights/fogLamps.jpg" alt="bmw fog lamps" class="light_info bmwFogLamps">
-							<img src="client/images/bmwLights/highBeams.jpg" alt="bmw high beams" class="light_info bmwHighBeams">
 							<img src="client/images/bmwLights/highBeamAssist.jpg" alt="bmw high beam assistant" class="light_info bmwHighBeamAssist">
-							<img src="client/images/bmwLights/parkingLamps.jpg" alt="bmw parking lamps" class="light_info bmwParkingLamps">
 							<img src="client/images/bmwLights/activeCruiseCtrl.jpg" alt="bmw active cruise control" class="light_info bmwActiveCruise">
 							<img src="client/images/bmwLights/vehicleDetection.jpg" alt="bmw vehicle detection" class="light_info bmwVehicleDetection">
 							<img src="client/images/bmwLights/cruiseCtrl.jpg" alt="bmw cruise control" class="light_info bmwCruiseCtrl">
 							<img src="client/images/bmwLights/laneWarning.jpg" alt="bmw lane departure warning" class="light_info bmwLaneWarning">
-							<!-- Warning Lights -->
-							<img src="client/images/bmwLights/airbag.jpg" alt="bmw airbag" class="light_info bmwAirBag">
-							<img src="client/images/bmwLights/ABS.jpg" alt="bmw anitlock brake" class="light_info bmwABS">
-							<img src="client/images/bmwLights/battery.jpg" alt="bmw battery" class="light_info bmwBattery">
-							<img src="client/images/bmwLights/caution.jpg" alt="bmw caution" class="light_info bmwCaution">
 							<img src="client/images/bmwLights/brakePads.jpg" alt="bmw brake pads" class="light_info bmwBrakePads">
-							<img src="client/images/bmwLights/coolant.jpg" alt="bmw coolant level" class="light_info bmwCoolant">
 							<img src="client/images/bmwLights/DSC.jpg" alt="bmw Dynamic Stability Control" class="light_info bmwDSC">
-							<img src="client/images/bmwLights/empty.jpg" alt="bmw gas empty" class="light_info bmwEmpty">
-							<img src="client/images/bmwLights/overheating.jpg" alt="bmw overheating" class="light_info bmwOverheat">
-							<img src="client/images/bmwLights/engine.jpg" alt="bmw engine" class="light_info bmwEngine">
-							<img src="client/images/bmwLights/bulb.jpg" alt="bmw exterior lighting" class="light_info bmwBulb">
 							<img src="client/images/bmwLights/gasCap.jpg" alt="bmw gas cap" class="light_info bmwGasCap">
-							<img src="client/images/bmwLights/oilLevel.jpg" alt="bmw oil level" class="light_info bmwOilLevel">
-							<img src="client/images/bmwLights/safetyBelt.jpg" alt="bmw safety belt" class="light_info bmwSafetyBelt">
 							<img src="client/images/bmwLights/service.jpg" alt="bmw service" class="light_info bmwService">
 							<img src="client/images/bmwLights/steering.jpg" alt="bmw steering" class="light_info bmwSteering">
 							<img src="client/images/bmwLights/temp.jpg" alt="bmw outside temperature" class="light_info bmwTemp">
-							<img src="client/images/bmwLights/TPM.jpg" alt="bmw tire pressure monitor" class="light_info bmwTPM">
-							<img src="client/images/bmwLights/doorOpen.jpg" alt="bmw door open" class="light_info bmwDoor">
-							<img src="client/images/bmwLights/wiperFluid.jpg" alt="bmw window washer fluid" class="light_info bmwWiperFluid">
-
+							<!-- MINI Lighting -->
+							<img src="client/images/miniLights/safetyBelt.jpg" alt="safety belt" class="light_info miniSafetyBelt">
+							<img src="client/images/miniLights/airbag.jpg" alt="airbag" class="light_info miniAirBag">
+							<img src="client/images/miniLights/power-steering.jpg" alt="power steering" class="light_info miniPowerSteering">
+							<img src="client/images/miniLights/outside-temp.jpg" alt="outside temperature" class="light_info miniTemp">
+							<img src="client/images/miniLights/engine-no-start.jpg" alt="engine refuses to start" class="light_info miniEngineNoStart">
+							<img src="client/images/miniLights/driver-door-on.jpg" alt="ignition on door open" class="light_info miniDoorEngineOn">
+							<img src="client/images/miniLights/diesel-preheat.jpg" alt="diesel preheat" class="light_info miniDieselPreheat">
+							<img src="client/images/miniLights/remote-control.jpg" alt="remote control faulty" class="light_info miniRemoteControl">
+							<img src="client/images/miniLights/battery-remote.jpg" alt="remote control battery" class="light_info miniBatteryRemote">
+							<img src="client/images/miniLights/engine-malfunction.jpg" alt="engine malfunction" class="light_info miniEngineMalfunction">
+							<img src="client/images/miniLights/engine.jpg" alt="engine fault" class="light_info miniEngine">
+							<img src="client/images/miniLights/battery.jpg" alt="battery" class="light_info miniBattery">
+							<img src="client/images/miniLights/brake.jpg" alt="brake" class="light_info miniBrake">
+							<img src="client/images/miniLights/engine-temp.jpg" alt="engine temperature" class="light_info miniEngineTemp">
+							<img src="client/images/miniLights/vehicle-on-stand.jpg" alt="service stand" class="light_info miniBrake miniServiceStand">
 						</div>
 						<div class="col-md-8">
 							<h4>Info / Possible Actions:</h4>
-							<!-- Standard Operating Lights -->
 							<p class="light_info bmwTurns">Turn Signals</p>
 							<p class="light_info bmwPbreak">Parking Break</p>
 							<p class="light_info bmwAutoHold">Automatic Hold</p>
@@ -138,10 +161,13 @@
 							<p class="light_info bmwVehicleDetection">Vehicle Detection, Active Cruise Control</p>
 							<p class="light_info bmwCruiseCtrl">Cruise Control</p>
 							<p class="light_info bmwLaneWarning">Lane Departure Warning</p>
-							<!-- Warning Lights -->
-							<p class="light_info bmwAirBag">Airbag System</p>
+							<p class="light_info bmwAirBag miniAirBag">Airbag System</p>
 								<ul class="light_info bmwAirBag">
 									<li>Belt Tensioners and/or airbag system failed.</li>
+									<li>Have system checked immediately.</li>
+								</ul>
+								<ul class="light_info miniAirBag">
+									<li>Will illuminate if either one or more airbags systems have reported a fault.</li>
 									<li>Have system checked immediately.</li>
 								</ul>
 							<p class="light_info bmwABS">Antilock Brake System (ABS)</p>
@@ -204,11 +230,16 @@
 								<ul class="light_info bmwOilLevel">
 									<li>Your oil level is low. Add oil immediately.</li>
 								</ul>
-							<p class="light_info bmwSafetyBelt">Safety Belts</p>
+							<p class="light_info bmwSafetyBelt miniSafetyBelt">Safety Belts</p>
 								<ul class="light_info bmwSafetyBelt">
 									<li>This light indicates that safety belts are not fastened. Prolonged ignoring of this warning will result in a sound and a flashing of the light until the safety belt is fastened.</li>
 									<li>The Safety Belt warning is activated at speeds over 5 mph.</li>
 									<li>This warning can be activated if items of a certain weight are placed on the front passenger seat while the car is in motion.</li>
+								</ul>
+								<ul class="light_info miniSafetyBelt">
+									<li>Will illuminate if the seat belt tensioners have failed.</li>
+									<li>If seat belt tensioners have failed, use seat belts as normal.</li>
+									<li>Have the vehicle checked by an authorised workshop immediately.</li>
 								</ul>
 							<p class="light_info bmwService">Service Vehicle</p>
 								<ul class="light_info bmwService">
@@ -220,9 +251,9 @@
 									<li>This warning is asking you to initiate a test of your steering system.</li>
 									<li>With the engine running, turn the steering wheel all the way to the left, then all the way to the right several times until the light disappears.</li>
 								</ul>
-							<p class="light_info bmwTemp">Temperature Warning</p>
-								<ul class="light_info bmwTemp">
-									<li>If you hear a ding and see this indicator light, it means that the temperature outside has dropped below 37 degrees.</li>
+							<p class="light_info bmwTemp miniTemp">Temperature Warning</p>
+								<ul class="light_info bmwTemp miniTemp">
+									<li>If you hear a ding and see this indicator light, it means that the temperature outside has dropped below 37 degrees fahrenheit or 3 degrees celcius.</li>
 									<li>Please be aware of road conditions as they could be dangerous.</li>
 								</ul>
 							<p class="light_info bmwTPM">Tire Pressure Monitor</p>
@@ -240,9 +271,94 @@
 								<ul class="light_info bmwWiperFluid">
 									<li>Add washer fluid as soon as possible.</li>
 								</ul>
+							<p class="light_info miniPowerSteering">Power Steering Failure</p>
+								<ul class="light_info miniPowerSteering">
+									<li>If this dashboard warning light illuminates, the power assisted steering has failed.</li>
+									<li>The vehicle can still be driven although significantly different steering characteristics will be felt.</li>
+									<li>Contact Dynasport as soon as possible.</li>
+								</ul>
+							<p class="light_info miniEngineNoStart">Engine Refuses to Start</p>
+								<ul class="light_info miniEngineNoStart">
+									<li>To start the engine, depress the brake if the car has automatic transmission, or depress the clutch if the car has manual transmission.</li>
+								</ul>
+							<p class="light_info miniDoorEngineOn">Engine Refuses to Start</p>
+								<ul class="light_info miniDoorEngineOn">
+									<li>This exclamation mark dashboard symbol illuminate when the ignition is attempted to be switched on while the driver door is not shut.</li>
+								</ul>
+							<p class="light_info miniDieselPreheat">Diesel Preheat</p>
+								<ul class="light_info miniDieselPreheat">
+									<li>When temperatures fall below 0C / 32F, starting the engine may be delayed by the use of automatic preheating on diesel engines.</li>
+								</ul>
+							<p class="light_info miniRemoteControl">Remote Control Faulty</p>
+								<ul class="light_info miniRemoteControl">
+									<li>The key dashboard light will illuminate if the remote control is faulty or not detected if the car has convenient access without its need.</li>
+									<li>If the engine cannot be started, have the remote control checked.</li>
+								</ul>
+							<p class="light_info miniBatteryRemote">Remote Control Battery</p>
+								<ul class="light_info miniBatteryRemote">
+									<li>The key with the battery symbol warning will illuminate if the battery in the remote control is discharged or flat.</li>
+									<li>Drive longer journeys to recharge the battery or in older models replace the battery.</li>
+								</ul>
+							<p class="light_info miniEngineMalfunction">Engine Malfunction</p>
+								<ul class="light_info miniEngineMalfunction">
+									<li>Signifies an engine malfunction within your Mini car.</li>
+									<li>The severity of the malfunction depends on the light color:</li>
+										<ul>
+											<li>If the symbol shows red, stop the car and switch off the engine. You will be unable to continue your journey.</li>
+											<li>If the symbol shows yellow, engine power is limited. You can continue the journey, but have the issue dealt with by an authorised workshop as soon as possible.</li>
+										</ul>
+								</ul>
+							<p class="light_info miniEngine">Engine Fault Warning</p>
+								<ul class="light_info miniEngine">
+									<li>Signifies a fault within the engine.</li>
+									<li>On the Mini dashboard, if the fault light is flashing, reduce speed and moderate engine load. High engine load will result in damage to the catalytic converter.</li>
+									<li>If the symbol remains a constant illumination, a degradation in vehicle emissions will occur.</li>
+									<li>In either case, vehicle can be driven, but seek assistance from a vehicle technician as soon as possible.</li>
+								</ul>
+							<p class="light_info miniBattery">Battery Warning</p>
+								<ul class="light_info miniBattery">
+									<li>Severity of the problem is signified by color of the dashboard symbol:</li>
+										<ul>
+											<li>Red indicates the battery is no longer being charged.</li>
+											<li>Yellow indicates the battery has a low charge.</li>
+										</ul>
+									<li>In either case, turn off any vehicle systems that consume electrical charge and have the battery checked as soon as possible.</li>
+								</ul>
+							<p class="light_info miniBrake">Brake Issues</p>
+								<ul class="light_info miniBrake">
+									<li>As well as informing the driver that the handbrake is applied, this warning light has other uses depending on its color:</li>
+										<ul>
+											<li>If red, brake fluid is too low. Top up the brake fluid reservoir with fluid or seek technical assistance if in doubt.</li>
+											<li>If yellow, the Hill Starts Assist feature has failed and the car will not be held in place after the brake has been released.</li>
+										</ul>
+									<li>If the combination shows the above symbol along with the car on a service ramp / lift stand, this signifies the brake pads are worn. This should be looked at without delay as braking could become seriously impaired.</li>
+								</ul>
+							<p class="light_info miniEngineTemp">Engine Temperature</p>
+								<ul class="light_info miniEngineTemp">
+									<li>Severity of the engine temperature warning light depends on color:</li>
+										<ul>
+											<li>If the dashboard symbol is red, overheating will occur. Stop the car and switch off the engine to allow cooling. Do not open hood until engine has sufficiently cooled as there is a risk of scolding.</li>
+											<li>If the light is yellow, the engine is running hot. Slow down and moderate engine load to allow the engine to cool.</li>
+										</ul>
+								</ul>
+							<p class="light_info miniServiceStand">Car on Ramp / Lift</p>
+								<ul class="light_info miniServiceStand">
+									<li>Signifies various issues depending on the color of the symbol when illuminated:</li>
+									<li>RED:</li>
+										<ul>
+											<li>The engine starter has failed. In this situation, you will be unable to start the engine and mechanical assistance is required.</li>
+											<li>The ignition is malfunctioning and the engine is only possible to start when the brake pedal is depressed.</li>
+											<li>Vehicle lighting system failed. Rear and brake lights operational as well as low beam lights. All other light non-operational.</li>
+										</ul>
+									<li>YELLOW:</li>
+										<ul>
+											<li>Brake light failure.</li>
+											<li>Fuel supply faulty. Vehicle will still be operational although speed of vehicle should be moderated.</li>
+											<li>Drive system malfunctioning. Vehicle will still operate though at a reduced speed.</li>
+										</ul>
+								</ul>
 						</div>
 					</div>
-					<!-- END BMW Lighting -->
 				</div>
 				<div class="modal-footer">
 					<p>If you see an indicator light and are unclear what it means, please contact DynaSport at <strong>503-241-1717</strong></p> 

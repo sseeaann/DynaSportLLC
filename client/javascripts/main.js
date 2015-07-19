@@ -22,18 +22,28 @@ $(document).ready(function(){
 		$('.light_info, .light_icons').hide();
 		$('.' + $(this).data('id')).toggle();
 	});
+
+	// Make Selected
+	$('.bmw_light').click(function(){
+		$('#miniSelected').hide();
+		$('#bmwSelected').show();
+	});
+	$('.mini_light').click(function(){
+		$('#bmwSelected').hide();
+		$('#miniSelected').show();
+	});
+
 	// Make lights
 	$('.light_info').hide();
 	$('.tog').click(function(){
 		$('.light_info').hide();
 		$('.' + $(this).data('id')).toggle();
 	});
+
 	// Clear when modal is closed
 	$('[data-dismiss="modal"]').click(function(){
-		$('.light_info, .light_icons').hide();
+		$('.light_info, .light_icons, #bmwSelected, #miniSelected').hide();
 	});
-
-	
 
 // For nav bar: 
 	var winHeight = $(window).height(),

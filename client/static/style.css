@@ -255,8 +255,14 @@ h1, h2 {
 
 		#bmwLights, 
 		#miniLights, 
-		.light_info {
+		.light_info,
+		#bmwSelected,
+		#miniSelected {
 			display: none;
+		}
+		#bmwSelected,
+		#miniSelected {
+			color: white;
 		}
 			p.light_info, ul.light_info {
 				font-size: 1.5em;
@@ -267,8 +273,7 @@ h1, h2 {
 				height: 40px;
 			}
 			.light_icons img:hover {
-				box-shadow: 0 0 15px black;
-				border-radius: 5px;
+				outline: 1px solid red;
 				transform: scale(1.5);
 				-moz-transform:scale(1.5); 
 				-webkit-transform:scale(1.5);
