@@ -114,4 +114,17 @@ $(document).ready(function(){
 		template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
 	});
 	userFeed.run();
+
+// Sweet Alert:
+	$('form').submit(function(event){
+		var frm = document.getElementsByName('msgForm')[0];
+		if($('input').val() != "" && $('textarea').val() != ""){
+			swal({
+				title: "Sweet!",
+				text: "A Dynasport associate will be in touch with you soon!",
+				imageUrl: "client/javascripts/sweetalert/thumbs-up.jpg"
+			});
+			frm.reset();
+		}
+	});
 });
