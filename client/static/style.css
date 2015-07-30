@@ -72,17 +72,34 @@ header{
 	background-attachment: fixed;
 }
 header i {
-	color: #eee;
+	color: #ffc233;
+	margin-top: 10px;
+	text-shadow: 1px 1px 2px black;
+	-webkit-animation: pulseEffect 2.5s infinite;
 }
 header i:hover {
-	color: #fff;
+	color: #ffed61;
 	text-shadow: 1px 1px 5px black;
 	cursor: pointer;
+}
+@-webkit-keyframes pulseEffect {
+	0% { 
+		color: #ffc233;
+		text-shadow: 1px 1px 4px black;
+	}
+	33% { 
+		color: #ffd042;
+		text-shadow: 1px 1px 8px black;
+	}
+	66% { 
+		color: #ffed61;
+		text-shadow: 1px 1px 15px black; 
+	}
 }
 div#headerContent {
 	text-align: center;
 	position: relative;
-	top: 15vh;
+	top: 10vh;
 }
 span.dynasport {
 	font-size: 3em;
@@ -105,12 +122,12 @@ span#sport {
 	-webkit-animation-delay: 0.3s;
 }
 #headerContent h2 {
-	color: #222;
+	color: #78c7ff;
 	margin: 0;
 	letter-spacing: 0.1em;
-	font-size: 2.5em;
+	font-size: 3em;
 	font-weight: bold;
-	text-shadow: 0 0 5px #eee;
+	text-shadow: 3px 3px 2px #222;
 	font-family: 'Racing Sans One', arial;
 	-webkit-animation-delay: 1s;
 }
