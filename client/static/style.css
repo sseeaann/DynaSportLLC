@@ -114,12 +114,12 @@ span#sport {
 	-webkit-animation-delay: 0.3s;
 }
 #headerContent h2 {
-	color: #78c7ff;
+	color: #c9ab7d;
 	margin: 0;
 	letter-spacing: 0.1em;
 	font-size: 3em;
 	font-weight: bold;
-	text-shadow: 3px 3px 2px #222;
+	text-shadow: 2px 3px 0px #222;
 	font-family: 'Racing Sans One', arial;
 	-webkit-animation-delay: 1s;
 }
