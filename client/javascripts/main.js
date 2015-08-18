@@ -13,7 +13,9 @@ $(document).ready(function(){
 	wow.init();
 
 // Tooltip:
-	$('[data-tooltip="tooltip"]').tooltip();
+	if(!('ontouchstart' in window)){
+		$('[data-tooltip="tooltip"]').tooltip();
+	}
 
 // Modal:
 	// Car Make
@@ -45,7 +47,7 @@ $(document).ready(function(){
 		$('.light_info, .light_icons, #bmwSelected, #miniSelected').hide();
 	});
 
-// For nav bar: 
+// For nav bar:
 	var winHeight = $(window).height(),
 		showNav = winHeight - $('nav').outerHeight(true),
 		animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
